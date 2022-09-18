@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <style >
+        h2 {color: rgb(4, 4, 244);
+            text-align: center; 
+            font-size: 40px;
+        }
+        h4 {
+            color: rgb(4, 4, 244);
+            text-align:center;
+            font-size: 25px;
+        }
+        body {
+            background-color: hsla(180, 1%, 23%, 0); 
+       
+            background-image:url('https://static.vecteezy.com/system/resources/previews/002/717/627/large_2x/piston-with-a-connecting-rod-part-of-a-car-engine-stock-illustration-isolated-on-white-background-vector.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+    
+</head>
+<body>
+    <h2> Second-hand Cars Prices </h2> 
+    <h4> Input the necessary data for price prediction </h4>
+    <div style="text-align:center;">
+        <form action="http://localhost:5000/result" method="post" style="text-align:center;">  
+            <table style="margin: 0 auto;" class="table">
+                <tr>
+                <th>Attribute</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td><label style="color: rgba(34, 105, 10, 0.916)" for="s_1">Marca</label></td>
+                <td><input type="text" id="Marca" name="Marca" required></td>
+                <br> 
+                <br>
+            </tr>
+
+            <tr>
+                <td><label style="color: rgb(34, 105, 10, 0.916)" for="s_2"> Modelo</label></td>
+                <td><input type="text" id="Modelo" name="Modelo" required></td>
+                <br> 
+                <br>
+            </tr>  
+                
+            <tr>
+                <td><label style="color: rgb(34, 105, 10, 0.916)" for="s_3"> Combustible </label></td>
+                <td>
+                    <select name="Combustible" id="Combustible">
+                        <option value="Diésel">Diésel</option>
+                        <option value="Gasolina">Gasolina</option>
+                        <option value="Híbrido">Híbrido</option>
+                        <option value="Eléctrico">Eléctrico</option>
+                        <option value="Híbrido enchufable">Híbrido enchufable</option>
+                        <option value="Gas licuado (GLP)">Gas licuado (GLP)</option>
+                        <option value="Gas natural (CNG)">Gas natural (CNG)</option>
+                    </select></td>
+                <br> 
+                <br>
+            </tr>
+
+            <tr>
+                <td><label style="color: rgb(34, 105, 10, 0.916)"for="s_4"> Anyo </label></td> 
+                <td><input type="number" id="Anyo" name="Anyo" required></td>
+                <br>
+                <br>
+            </tr>
+
+            <tr>
+                <td><label style="color: rgb(34, 105, 10, 0.916)" for="s_5">Kilómetros</label></td> 
+                <td><input type="number" id="Km" name="Km" required></td> 
+                <br> 
+                <br>
+            </tr>
+
+            <tr>
+                <td><label style="color: rgb(34, 105, 10, 0.916)" for="s_6"> Potencia</label></td> 
+                <td><input type="number" id="cv" name="cv" required></td>
+                <br> 
+                <br>
+            </tr>
+
+            <tr>
+                <td><label style="color: rgb(34, 105, 10, 0.916)" for="s_7"> Profesional ? </label></td>
+                <td>
+                    <select name="Profesional" id="Profesional">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                    </select></td>
+                <br> 
+                <br>
+            </tr>
+
+            <tr>
+                <td><label style="color: rgb(34, 105, 10, 0.916)" for="s_8"> Comunidad_Autónoma </label></td> 
+                <td>
+                    <select name="Comunidad" id="Comunidad">
+                        <option value="Comunidad_de_Madrid">Comunidad_de_Madrid</option>
+                        <option value="Andalucía">Andalucía</option>
+                        <option value="Catalunya">Catalunya</option>
+                        <option value="Comunidad_Valenciana">Comunidad_Valenciana</option>
+                        <option value="Galicia">Galicia</option>
+                        <option value="País_Vasco">País_Vasco</option>
+                        <option value="Canarias">Canarias</option>
+                        <option value="Castilla_La_Mancha">Castilla_La_Mancha</option>
+                        <option value="Región_de_Murcia">Región_de_Murcia</option>
+                        <option value="Aragón">Aragón</option>
+                        <option value="Extremadura">Extremadura</option>
+                        <option value="Principado_de_Asturias">Principado_de_Asturias</option>
+                        <option value="Islas_Baleares">Islas_Baleares</option>
+                        <option value="Navarra">Navarra</option>
+                        <option value="Cantabria">Cantabria</option>
+                        <option value="La_Rioja">La_Rioja</option>
+                        <option value="Melilla">Melilla</option>
+                        <option value="Ceuta">Ceuta</option>
+                    </select></td>
+            </tr>
+
+            </table>
+
+            <input style="color: rgb(34, 105, 10, 0.916);" type="submit" value="submit"> 
+
+        </form>
+    </div>
+    
+</body>
+</html> 
