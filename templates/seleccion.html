@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <style >
+        h2 {color: rgb(4, 4, 244);
+            text-align: center; 
+            font-size: 80px;
+        }
+        h4 {
+            color: rgb(233, 116, 14);
+            text-align:center;
+            font-size: 40px;
+        }
+        h6 {
+            color: rgb(8, 8, 8);
+            text-align:center;
+            font-size: 25px;
+        }        
+        body {
+            background-color: rgba(215, 229, 125, 0.481);
+            height: 100%;
+            
+            
+        }
+
+        .contenedor{
+            height:49%;
+            margin-top: 1%;
+            font-size: 20px;
+        }
+    </style>
+    
+</head>
+<body>
+    <h2> CARSAPP </h2> 
+    <h6> Calcule el precio de venta de su vehículo </h6>
+    <div style="text-align:initial;" class="contenedor" >
+        <h4> Opción 1: Selecciona el archivo con los datos de su vehículo</h4>
+        <center>
+        <form action="https://second-hand-cars-prices.herokuapp.com/input_archivo" method=get>
+            <input type=submit value=Archivo style="font-size: xxx-large; color: rgb(32, 8, 209);">
+        </form>
+        <br>
+
+        </center>
+    </div>
+    <div style="text-align:center;" class="contenedor" >
+        <h4> Opción 2: Introduzca manualmente los datos de su vehículo </h4>
+        <form action="https://second-hand-cars-prices.herokuapp.com/input_manual" method="get" style="text-align: center;">  
+    
+            <input style="font-size: xxx-large; color: rgb(32, 8, 209);" type="submit" value="Manual" > 
+        </form>
+    </div>
+    
+</body>
+</html> 

@@ -4,45 +4,45 @@
     <style >
         h2 {color: rgb(4, 4, 244);
             text-align: center; 
-            font-size: 40px;
+            font-size: 60px;
         }
         h4 {
-            color: rgb(4, 4, 244);
+            color: rgb(249, 152, 7);
+            text-align:center;
+            font-size: 40px;
+        }
+        h6 {
+            color: rgb(8, 8, 9);
             text-align:center;
             font-size: 25px;
-        }
+        }        
         body {
-            background-color: hsla(180, 1%, 23%, 0); 
-       
-            background-image:url('https://static.vecteezy.com/system/resources/previews/002/717/627/large_2x/piston-with-a-connecting-rod-part-of-a-car-engine-stock-illustration-isolated-on-white-background-vector.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
+            background-color: rgb(255, 255, 255); 
+            height: 100%;
+            
         }
+
     </style>
     
 </head>
 <body>
-    <h2> Second-hand Cars Prices </h2> 
-    <h4> Input the necessary data for price prediction </h4>
-    <div style="text-align:center;">
-        <form action="https://second-hand-cars-prices.herokuapp.com/result" method="post" style="text-align:center;">  
-            <table style="margin: 0 auto;" class="table">
-                <tr>
-                <th>Attribute</th>
-                <th>Value</th>
+
+    <div style="text-align:center;" >
+        <h4> Introduzca los datos de su vehículo </h4>
+        <form action="https://second-hand-cars-prices.herokuapp.com/result" method="post" style="text-align: center;">  
+            <table style="margin: auto;" class="table" vertical-align="top;">
+            <tr>
+                <th>Características</th>
+                <th>Valor</th>
             </tr>
             <tr>
                 <td><label style="color: rgba(34, 105, 10, 0.916)" for="s_1">Marca</label></td>
                 <td><input type="text" id="Marca" name="Marca" required></td>
-                <br> 
-                <br>
             </tr>
 
             <tr>
                 <td><label style="color: rgb(34, 105, 10, 0.916)" for="s_2"> Modelo</label></td>
                 <td><input type="text" id="Modelo" name="Modelo" required></td>
-                <br> 
-                <br>
             </tr>  
                 
             <tr>
@@ -57,40 +57,30 @@
                         <option value="Gas licuado (GLP)">Gas licuado (GLP)</option>
                         <option value="Gas natural (CNG)">Gas natural (CNG)</option>
                     </select></td>
-                <br> 
-                <br>
             </tr>
 
             <tr>
-                <td><label style="color: rgb(34, 105, 10, 0.916)"for="s_4"> Anyo </label></td> 
+                <td><label style="color: rgb(34, 105, 10, 0.916)"for="s_4"> Año </label></td> 
                 <td><input type="number" id="Anyo" name="Anyo" required></td>
-                <br>
-                <br>
             </tr>
 
             <tr>
                 <td><label style="color: rgb(34, 105, 10, 0.916)" for="s_5">Kilómetros</label></td> 
                 <td><input type="number" id="Km" name="Km" required></td> 
-                <br> 
-                <br>
             </tr>
 
             <tr>
                 <td><label style="color: rgb(34, 105, 10, 0.916)" for="s_6"> Potencia</label></td> 
                 <td><input type="number" id="cv" name="cv" required></td>
-                <br> 
-                <br>
             </tr>
 
             <tr>
-                <td><label style="color: rgb(34, 105, 10, 0.916)" for="s_7"> Profesional ? </label></td>
+                <td><label style="color: rgb(34, 105, 10, 0.916)" for="s_7"> Vendedor Profesional </label></td>
                 <td>
                     <select name="Profesional" id="Profesional">
-                        <option value="0">0</option>
-                        <option value="1">1</option>
+                        <option value="0">False</option>
+                        <option value="1">True</option>
                     </select></td>
-                <br> 
-                <br>
             </tr>
 
             <tr>
@@ -105,6 +95,7 @@
                         <option value="País_Vasco">País_Vasco</option>
                         <option value="Canarias">Canarias</option>
                         <option value="Castilla_La_Mancha">Castilla_La_Mancha</option>
+                        <option value="Castilla_y_León">Castilla_y_León</option>
                         <option value="Región_de_Murcia">Región_de_Murcia</option>
                         <option value="Aragón">Aragón</option>
                         <option value="Extremadura">Extremadura</option>
@@ -117,11 +108,8 @@
                         <option value="Ceuta">Ceuta</option>
                     </select></td>
             </tr>
-
             </table>
-
-            <input style="color: rgb(34, 105, 10, 0.916);" type="submit" value="submit"> 
-
+            <input style="color: rgb(34, 105, 10, 0.916);" type="submit" value="Aceptar"> 
         </form>
     </div>
     

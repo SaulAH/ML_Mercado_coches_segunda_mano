@@ -34,8 +34,16 @@ def prediction(df,model):
  
 
 @app.route('/')
-def input_data(): 
+def seleccion(): 
+    return render_template('seleccion.html')
+
+@app.route('/input_manual')
+def input_data_manual(): 
     return render_template('input_manual.html') 
+
+@app.route('/input_archivo')
+def input_data_archivo(): 
+    return render_template('input_archivo.html') 
 
 @app.route('/result', methods=["POST","GET"]) 
 def input():
@@ -58,6 +66,7 @@ def input():
         pred = str(prediccion)+str('€')
 
         return render_template('result.html', predicted = pred) 
+    
 
 @app.route('/upload', methods = ['POST','GET'])
 def upload():
